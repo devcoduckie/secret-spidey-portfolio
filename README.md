@@ -6,6 +6,10 @@
 
 This project is a mock portfolio for "Peter Parker" and "Spider-Man." It allows you to toggle between the two personas, dynamically changing the content and color scheme of the portfolio.
 
+## Demo
+
+[View Demo](https://secret-spidey.netlify.app/)
+
 ## Features
 
 - Toggle between Peter Parker and Spider-Man content modes.
