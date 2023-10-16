@@ -1,0 +1,71 @@
+/* Light Mode */
+
+body:after {
+  position: absolute;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: -1;
+}
+
+.light-mode {
+  --bg: #fff;
+  --bg-alt: #333;
+  --bg-alt-2: #f0f0f0;
+  --bg-transparent: #ffffffe8;
+  --border: 0.01rem solid #333;
+  --text: #333;
+  --text-alt: #fff;
+
+  --hero-1: url(../assets/hero-image/peter-parker.webp);
+
+  --sun: url(../assets/icons/sun.png);
+}
+
+/* Spidey Mode 🕸️ */
+
+.spidey-mode {
+  /* --bg: #202124; */
+  --bg: #007fd7;
+  /* --bg-alt: #3c3d40; */
+  --bg-alt: #ac0202;
+  /* --bg-alt-2: #f0f0f0; */
+  --bg-alt-2: #e2e2e2;
+  --bg-transparent: #333333f5;
+  --border: 0.02rem solid #f0f0f0;
+  --text: #fff;
+
+  --hero-1: url(../assets/hero-image/spider-man-ps4.png);
+
+  --spidey-icon: url(../assets/icons/avatar.png);
+}
+
+/* Toggle Mode Button */
+
+#toggle-mode {
+  background: var(--bg-alt-2);
+  height: 2.75rem;
+  width: 4rem;
+  border-radius: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+#toggle-button {
+  background-image: var(--sun);
+  background-size: cover;
+  cursor: pointer;
+}
+
+.spidey-mode #toggle-button {
+  background-image: var(--moon);
+}
+
+.spidey-mode #toggle-mode {
+  justify-content: flex-end;
+}
